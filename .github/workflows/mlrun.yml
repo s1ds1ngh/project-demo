@@ -1,5 +1,6 @@
 name: mlrun-project-workflow
-on: [issue_comment]
+on: 
+  workflow_dispatch:
 
 jobs:
   submit-project:
