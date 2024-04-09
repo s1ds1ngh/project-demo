@@ -18,7 +18,7 @@ jobs:
     - name: Install mlrun
       run: python -m pip install pip install mlrun
     - name: Submit project
-      run: python -m mlrun project ./ -w -r main ${CMD:5}
+      run: python -m gen_iris.py ./ -w -r main ${CMD:5}
       env:
         V3IO_USERNAME: ${{ secrets.V3IO_USERNAME }}
         V3IO_API: ${{ secrets.V3IO_API }}
